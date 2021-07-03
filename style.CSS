@@ -1,0 +1,143 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body
+{
+    background-color: #1b4332;
+}
+
+
+.surprise
+{
+    position:absolute;
+    top:-100px;
+    bottom: -50px;
+    right: 0px;
+    left: 0px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: none;
+}
+ 
+ @keyframes fadeIn {
+        from {
+            opacity: 0;
+            top: 0px;
+            bottom: 0px;
+        }
+        to {opacity: 1;
+            top:-100px;
+            bottom: -50px; }
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+.surprise img
+{
+    width: 100%;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.row
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part2
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.calculate
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 30px;
+    border:1px solid black;
+    border-radius: 5px;
+    background:white;
+    padding:10px;
+    margin-right: 10px;
+    
+}
+
+
+
+button{
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 30px;
+    padding:15px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.year , .month , .day
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.part2 h3
+{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+}
+.part2 p
+{
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.part2_container
+{
+    width: 15%;
+}
+
+.text
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:"Helvetica", arial, sans-serif; 
+    margin-top: 50px;
+    
+}
